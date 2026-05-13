@@ -11,7 +11,7 @@ contact_links:
     about: Request a new feature for the Android application.
   - name: Problem with your dashboard
     url: https://github.com/home-assistant/frontend/issues
-    about: Most of the app's interface is provided by the Home Assistant frontend (WebView). Please report dashboard issues here.
+    about: Most of the app's interface is provided by the Domolux frontend (WebView). Please report dashboard issues here.
   - name: I have a question or need support
     url: https://www.home-assistant.io/help
     about: GitHub is for tracking bugs and feature requests. For help and support, please visit our help page.

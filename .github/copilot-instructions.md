@@ -4,7 +4,7 @@ This file provides guidance to any AI tool when working with code/review in this
 
 ## Project Overview
 
-This is the **Home Assistant Companion for Android**, an official Android app for the Home Assistant home automation platform. The app centers around a WebView for Home Assistant's PWA frontend, enhanced with native Android features like background sensor collection, notifications, widgets, and Wear OS support and Android Automotive.
+This is the **Domolux Companion for Android**, an official Android app for the Domolux home automation platform. The app centers around a WebView for Domolux's PWA frontend, enhanced with native Android features like background sensor collection, notifications, widgets, and Wear OS support and Android Automotive.
 This project is entirely made with Kotlin and it should stay like this.
 
 ## Build Commands
@@ -86,10 +86,10 @@ Code should be flavor-agnostic in the `main` source set whenever possible.
 - **Concurrency**: Kotlin Coroutines and Flow exclusively
 - **Database**: Room for local storage
 - **Preferences**: SharedPreferences with `LocalStorage` abstraction
-- **Networking**: Retrofit (REST API), OkHttp (WebSocket to Home Assistant Core)
+- **Networking**: Retrofit (REST API), OkHttp (WebSocket to Domolux Core)
 - **Serialization**: Kotlinx.serialization
 - **Logging**: Timber for logging throughout the app. Import: `import timber.log.Timber`
-- **Theming**: Use `io.homeassistant.companion.android.common.compose.theme.HATheme` for new components (Material Design based). We have a design system in place for the whole Home Assistant project.
+- **Theming**: Use `io.homeassistant.companion.android.common.compose.theme.HATheme` for new components (Material Design based). We have a design system in place for the whole Domolux project.
     - The components using this Design System are prefixed with `HA*` like `HAButton`.
     - Colors are injected through `io.homeassistant.companion.android.common.compose.theme.LocalHAColorScheme` using the tokens define in `io.homeassistant.companion.android.common.compose.theme.HAColorScheme`
 - **FailFast** - Custom utility for offensive programming in debug builds (located in `:common`)
@@ -111,7 +111,7 @@ Source code is in Kotlin under `src/main/kotlin/io/homeassistant/companion/andro
 - `launch/` - App launcher logic
 - `vehicle/` - Android Auto and Automotive specific content
 - `widgets/` - All the Android widgets (all new widgets must use Jetpack Glance for declarative UI)
-- `webview/` - Main Activity of the application with the implementation of the external bus to communicate with the Home Assistant Frontend.
+- `webview/` - Main Activity of the application with the implementation of the external bus to communicate with the Domolux Frontend.
 
 
 ## Development Practices
@@ -450,7 +450,7 @@ The app supports `homeassistant://` URLs for navigation. See user documentation 
 
 ## Wear OS Communication
 
-The Wear OS app uses the Messaging API to retrieve credentials from the mobile app (only works with `full` flavor). After setup, communication is direct with Home Assistant via WebSocket and webhooks.
+The Wear OS app uses the Messaging API to retrieve credentials from the mobile app (only works with `full` flavor). After setup, communication is direct with Domolux via WebSocket and webhooks.
 
 ## Widgets
 
@@ -462,7 +462,7 @@ The Wear OS app uses the Messaging API to retrieve credentials from the mobile a
 
 ## Server Commands
 
-The Home Assistant server can send commands to the app through `io.homeassistant.companion.android.notifications.MessagingManager`. These commands enable server-side control of app functionality such as:
+The Domolux server can send commands to the app through `io.homeassistant.companion.android.notifications.MessagingManager`. These commands enable server-side control of app functionality such as:
 - Triggering notifications
 - Updating sensors
 - Controlling app behavior

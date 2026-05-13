@@ -3,7 +3,7 @@
     Please, complete the following sections to help the processing and review of your changes.
     Please, DO NOT DELETE ANY TEXT from this template! (unless instructed).
 
-    Thank you for submitting a Pull Request and helping to improve Home Assistant. You are amazing!
+    Thank you for submitting a Pull Request and helping to improve Domolux. You are amazing!
 -->
 
 ## Summary
@@ -36,7 +36,7 @@
 -->
 
 ## Link to pull request in documentation repositories
-<!-- 
+<!--
     This pull request introduces, changes, or removes user-facing functionality.
     A corresponding update to the Companion App documentation in the documentation repository (https://github.com/home-assistant/companion.home-assistant) is required.
 
@@ -49,7 +49,7 @@
 -->
 User Documentation: home-assistant/companion.home-assistant#
 
-<!-- 
+<!--
     This pull request introduces, changes, or removes developer-facing functionality.
     A corresponding update to the Developer documentation in the documentation repository (https://github.com/home-assistant/developers.home-assistant) is required.
 
@@ -62,6 +62,6 @@ User Documentation: home-assistant/companion.home-assistant#
 Developer Documentation: home-assistant/developers.home-assistant#
 
 ## Any other notes
-<!-- 
+<!--
     If there is any other information of note, like if this Pull Request is part of a bigger change, please include it here.
 -->

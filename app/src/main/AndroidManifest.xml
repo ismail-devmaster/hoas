@@ -338,7 +338,7 @@
         <!--Exported proxy for the public REQUEST_ACCURATE_UPDATE action, used by external
         automation tools such as Tasker (see https://github.com/home-assistant/android/pull/5509).
         LocationSensorManager itself stays unexported. Exposing this receiver is safe: no data
-        leaves Home Assistant, and the action only triggers a sensor update with no other side
+        leaves Domolux, and the action only triggers a sensor update with no other side
         effects.-->
         <receiver
             android:name=".sensors.RequestAccurateLocationReceiver"
@@ -498,6 +498,7 @@
                     android:pathPrefix="/tag/" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".nfc.NfcSetupActivity"
             android:exported="false"
