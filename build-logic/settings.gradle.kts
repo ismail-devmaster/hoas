@@ -6,8 +6,6 @@ pluginManagement {
 }
 
 plugins {
-    // This is used to be able to use version catalog within this project (`libs` variable)
-    // because of that we can't have the version of this plugin in the version catalog.
     id("dev.panuszewski.typesafe-conventions") version "0.10.1"
 }
 
@@ -22,6 +20,11 @@ dependencyResolutionManagement {
         }
         mavenCentral()
         gradlePluginPortal()
+    }
+    versionCatalogs {
+        create("libs") {
+            from(files("../gradle/libs.versions.toml"))
+        }
     }
 }
 
